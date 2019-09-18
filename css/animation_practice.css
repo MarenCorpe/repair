@@ -1,0 +1,96 @@
+/* this is where all of your CSS styles go */
+.container {
+	width: 600px;
+	position: relative;
+	left: 30%;
+}
+@keyframes garbage_fade {
+	0% {opacity:0;}
+	100% {opacity: 1;}
+}
+#background {
+	width: 100%;
+	position: relative;
+	opacity: 0;
+	animation: garbage_fade 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+#garbage {
+	width: 100%;
+	top: -787px;
+	position: relative;
+	z-index: -1;
+}
+.grid_container {
+	width: 600px;
+	height: 100px;
+	position: relative;
+	left: 48%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+.mono {
+	font-family: 'Gayathri', sans-serif;
+	font-size: 5em;
+	float: left;
+	margin-left: 5px;
+	color: black;
+	position: relative;
+	top: -1300px;
+}
+@keyframes the_fade {
+	0% {opacity:0;}
+	100% {opacity: 1;}
+}
+#the {
+	font-size: 3em;
+	left: -120px;
+	opacity: 0;
+	animation: the_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@keyframes r_fade {
+	0% {opacity:0;}
+	100% {opacity: 1;}
+}
+.r {
+	opacity: 0;
+	animation: r_fade 2s;
+	animation-fill-mode: reverse;
+}
+.e {
+	opacity: 0;
+	animation: r_fade 2s;
+	animation-fill-mode: reverse;
+	
+}
+.p {
+	opacity: 0;
+	animation: r_fade 2s;
+	animation-fill-mode: reverse;
+	
+}
+@keyframes a_move {
+	0% { top: -1300px; color: black; }
+	100% { top: -1400px; color: white; }
+}
+.a {
+	position: relative;
+	animation: a_move 3s normal cubic-bezier(0,0,1,3);
+	animation-delay: 1s;
+}
+.i {
+	position: relative;
+	animation: a_move 3s normal cubic-bezier(0,0,1,3);
+	animation-delay: 1s;
+}
+.t {
+	position: relative;
+	animation: a_move 3s normal cubic-bezier(0,0,1,3);
+	animation-delay: 1s;
+}
+
